@@ -1,0 +1,135 @@
+<footer class="footer pt-50">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 footer_logo">
+        <a><img src="assets/images/SVGLogo.svg" alt="" /></a>
+        <p style="color: aliceblue">
+          <b>Service 31 Clean</b> Dirigée par BADI Brahim, propose des services
+          de nettoyage professionnel à Toulouse et ses environs. Spécialisée
+          dans l’entretien des bâtiments professionnels et privés, notre
+          entreprise, se tient à votre disposition pour réaliser vos prestations
+          dans les plus brefs délais et dans les meilleures conditions avec un
+          trvail de qualité.
+        </p>
+      </div>
+
+      <div
+        style="color: aliceblue"
+        class="col-md-6 col-lg-2 mt-xs-30 link_footer"
+      >
+        <h4>MENU</h4>
+        <ul>
+          <li>
+            <a href="#">À propos</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div
+        style="color: aliceblue"
+        class="col-md-6 col-lg-3 mt-sm-30 mt-xs-30 footer-latest-news"
+      >
+        <h4>Contact</h4>
+        <div class="single-news">
+          <button
+            (click)="goToItineraire()"
+            type="button"
+            class="btn btn-primary"
+          >
+            ITINERAIRE
+          </button>
+        </div>
+        <div class="single-news">
+          <button (click)="appeler()" type="button" class="btn btn-primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-telephone-outbound-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"
+              ></path>
+            </svg>
+            APPELER
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mt-sm-30 mt-xs-30 footer-subscribe">
+        <div style="color: aliceblue">
+          <h3 class="Gou21b">Horaires d'ouverture</h3>
+          <div>
+            <table itemprop="openingHours">
+              <tbody>
+                <tr>
+                  <th class="x2TOCf">lun.:</th>
+                  <td class="o0m3Qb">
+                    <span class="WF8WNe">06:00 – 12:00, </span
+                    ><span class="WF8WNe">13:00 – 20:00</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="x2TOCf">mar.:</th>
+                  <td class="o0m3Qb">
+                    <span class="WF8WNe">06:00 – 12:00, </span
+                    ><span class="WF8WNe">13:00 – 20:00</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="x2TOCf">mer.:</th>
+                  <td class="o0m3Qb">
+                    <span class="WF8WNe">06:00 – 12:00, </span
+                    ><span class="WF8WNe">13:00 – 20:00</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="x2TOCf">jeu.:</th>
+                  <td class="o0m3Qb">
+                    <span class="WF8WNe">06:00 – 12:00, </span
+                    ><span class="WF8WNe">13:00 – 20:00</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="x2TOCf">ven.:</th>
+                  <td class="o0m3Qb">
+                    <span class="WF8WNe">06:00 – 12:00, </span
+                    ><span class="WF8WNe">13:00 – 20:00</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="x2TOCf">sam.:</th>
+                  <td class="o0m3Qb">
+                    <span class="WF8WNe">06:00 – 12:00, </span
+                    ><span class="WF8WNe">13:00 – 20:00</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="x2TOCf">dim.:</th>
+                  <td class="o0m3Qb"><span class="WF8WNe">Fermé</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11549.304451356986!2d1.4383528!3d43.641383!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6d27aac626ab7214!2sSERVICE31CLEAN!5e0!3m2!1sfr!2sfr!4v1635632303328!5m2!1sfr!2sfr"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center; color: white">
+    Copyright {{ annee }} SERVICE31CLEAN. All Rights Reserved.
+  </div>
+</footer>

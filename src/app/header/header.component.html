@@ -1,0 +1,104 @@
+  <!--loader-->
+  <div id="preloader">
+    <div class="sk-circle">
+      <div class="sk-circle1 sk-child"></div>
+      <div class="sk-circle2 sk-child"></div>
+      <div class="sk-circle3 sk-child"></div>
+      <div class="sk-circle4 sk-child"></div>
+      <div class="sk-circle5 sk-child"></div>
+      <div class="sk-circle6 sk-child"></div>
+      <div class="sk-circle7 sk-child"></div>
+      <div class="sk-circle8 sk-child"></div>
+      <div class="sk-circle9 sk-child"></div>
+      <div class="sk-circle10 sk-child"></div>
+      <div class="sk-circle11 sk-child"></div>
+      <div class="sk-circle12 sk-child"></div>
+    </div>
+  </div>
+
+  <!--loader-->
+
+  <!-- HEADER -->
+  <header>
+    <div class="middel-part__block" style="background-image: url('assets/images/banner/slider1.jpg');" >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 logo col-md-12 d-flex align-items-center" >
+
+            <a routerLink="/"> <img src="assets/images/SVGLogo.svg" alt="Logo"> </a>
+
+            <div class="navbar-header bg-primary" >
+              <button type="button" #navbarToggler class="navbar-toggle hidden-lg-up" data-toggle="collapse" data-target="#navbar-menu">
+                <i class="fa fa-bars"></i>
+              </button>
+
+            </div>
+          </div>
+    
+          <div class="col-lg-8 col-md-12">
+            <div class="top-info__block text-right">
+              <ul>
+                <li>
+                  <i class="fa fa-map-marker"></i>
+                  <p>
+                   175 Route De Launaguet 
+                    <span> 31200 Toulouse</span>
+                  </p>
+                </li>
+                <li>
+                  <i class="fa fa-phone"></i>
+                  <p>
+                   Mobile
+                    <span> +33 6 70 43 15 03</span>
+                  </p>
+                </li>
+                <li>
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <p>
+                    E-mail
+                    <span> <a href="mailto:service31clean@gmail.com">service31clean@gmail.com</a> </span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main_nav stricky-header__top navbar-toggleable-md">
+
+      <nav class="navbar navbar-default navbar-sticky bootsnav">
+        <div class="container">
+          <!-- Start Header Navigation -->
+
+          <!-- End Header Navigation -->
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav mobile-menu d-flex justify-content-between">
+              <li>
+                <a (click)="collapseNav()" routerLink="home" routerLinkActive="active" data-toggle="collapse" >Accueil</a>
+              </li>
+              <li>
+                <a (click)="collapseNav()" routerLink="about" routerLinkActive="active">À propos</a>
+              </li>
+              <li>
+                <a (click)="collapseNav()" routerLink="service" routerLinkActive="active">Services</a>
+              </li>   
+              <li>
+                <a (click)="collapseNav()" routerLink="vitre" routerLinkActive="active">Vitres</a>
+              </li>   
+              <li>
+                <a (click)="collapseNav()"routerLink="contact" routerLinkActive="active" >Contact</a>
+              </li>
+              <li>
+                <a (click)="collapseNav()"routerLink="devis" routerLinkActive="active" >Devis</a>
+              </li>
+            </ul>
+          </div>
+          <!--navbar-collapse -->
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- END HEADER -->

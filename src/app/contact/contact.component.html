@@ -1,0 +1,158 @@
+<!-- CONTENT -->
+<!-- Intro Section -->
+<section
+  class="inner-intro bg-img light-color overlay-before parallax-background"
+>
+  <div class="container">
+    <div class="row title">
+      <div class="title_row">
+        <h1 data-title="Contact"><span>Contact</span></h1>
+        <div class="page-breadcrumb"><a>Accueil</a>/ <span>Contact</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Intro Section -->
+<!-- Contact Section -->
+<section class="padding ptb-xs-40">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="headeing pb-30">
+          <h2>Nous contacter</h2>
+          <span class="b-line l-left line-h"></span>
+        </div>
+        <!-- Contact FORM -->
+        <form
+          [formGroup]="contactForm"
+          class="contact-form"
+          id="contact"
+        >
+          <!-- IF MAIL SENT SUCCESSFULLY -->
+          <div id="success">
+            <div role="alert" class="alert alert-success">
+              <strong>Thanks</strong> for using our template. Your message has
+              been sent.
+            </div>
+          </div>
+          <!-- END IF MAIL SENT SUCCESSFULLY -->
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-field">
+                <input
+                  class="input-sm form-full"
+                  id="name"
+                  type="text"
+                  formControlName="name"
+                  placeholder="Nom"
+                />
+                <div *ngIf="submitted && f.name.errors">
+                  <div *ngIf="f.name.errors.required">Nom est obligatoire</div>
+                </div>
+              </div>
+              <!--<div class="form-field">
+                <input
+                  class="input-sm form-full"
+                  id="email"
+                  type="email"
+                  formControlName="email"
+                  placeholder="Email"
+                />
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                  <div *ngIf="f.email.errors.required">Emailest obligatoire</div>
+                  <div *ngIf="f.email.errors.email">Email non valide</div>
+              </div>
+              </div> -->
+              <div class="form-field">
+                <input
+                  class="input-sm form-full"
+                  id="sub"
+                  type="text"
+                  formControlName="subject"
+                  placeholder="Sujet"
+                />
+                <div *ngIf="submitted && f.subject.errors">
+                  <div *ngIf="f.subject.errors.required">
+                    Sujet est obligatoire
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-field">
+                <textarea
+                  class="form-full"
+                  id="message"
+                  rows="7"
+                  formControlName="message"
+                  placeholder="Message"
+                ></textarea>
+                <div *ngIf="submitted && f.message.errors">
+                  <div *ngIf="f.message.errors.required">
+                    Message est obligatoire
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 mt-30">
+              <button class="btn-text"  (click)="onSubmit()" type="submit" name="button">
+                Envoyer Message
+              </button>
+            </div>
+          </div>
+        </form>
+        <!-- END Contact FORM -->
+      </div>
+
+      <div class="col-lg-4 contact mt-sm-30 mt-xs-30">
+        <div class="headeing pb-20">
+          <h2>Informations Contact</h2>
+          <span class="b-line l-left line-h"></span>
+        </div>
+        <div class="contact-info">
+          <ul class="info">
+            <li>
+              <div class="icon ion-ios-location"></div>
+              <div class="content">
+                <p>175 Route De Launaguet</p>
+                <p>31200 Toulouse</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="icon ion-android-call"></div>
+              <div class="content">
+                <p>+33 6 70 43 15 03</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon ion-ios-email"></div>
+              <div class="content">
+                <p>service31clean@gmail.com</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Section -->
+</section>
+<!-- Contact Section -->
+
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->
+<agm-map [latitude]="lat" [longitude]="lng">
+  <agm-marker [latitude]="lat" [longitude]="lng">
+    <agm-info-window>
+      <p>
+        <strong><b>SERVICE31CLEAN</b></strong>
+      </p>
+      <p>175 Route De Launaguet</p>
+      <p>31200 Toulouse</p>
+      <p>+33 6 70 43 15 03</p>
+      <p>service31clean@gmail.com</p>
+    </agm-info-window>
+  </agm-marker>
+</agm-map>
+<!--End Contact-->
